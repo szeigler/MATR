@@ -1,0 +1,639 @@
+/* RESET --------------------------------------------------------------------------------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#000000;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	max-width:100%;
+}
+
+/*IDENTITY -------------------------------------------------------------------------------------------------------------------*/
+#page {
+	max-width:1000px;
+	margin:auto;
+}
+
+#header {
+	width:100%;
+	text-align:center;
+	background-color:#fff;
+	display:inline-block;
+	max-width:1000px;
+}
+
+#logo_bar {
+	margin-bottom:.875em; /*14em/16em*/
+	max-width:100%;
+	background-color:#000000;
+}
+
+#vcu_logo_mobile {
+	display:none;
+}
+
+#identity_search {
+	width:90%;
+	margin:auto;
+	max-width:900px;
+}
+
+#matr_logo {
+	float: left;
+	width: 40%;
+	min-width: 200px;
+	margin-left: 10%;
+}
+
+#matr_logo a, #matr_logo a:link, #matr_logo a:visited, #matr_logo a:hover, #matr_logo a:active {
+	text-decoration:none;
+}
+
+/* Search -------------------------------------------------------------------------------------------------------------------- */
+#search {
+	height:24px;
+	z-index:15;
+	width:200px;
+	float:right;
+	padding-top:3em;
+	margin-right:10%;
+}
+
+#search label {
+	display:none;
+}
+
+#search_box {
+	vertical-align:bottom;
+}
+	
+/* Top Navigation ------------------------------------------------------------------------------------------------------------ */
+#top_nav_container {
+	width:100%;
+	background-color:#fff;
+	display:block;
+	float:left;
+	margin-top:1em;
+	border-bottom:1px solid #f8b800;
+}
+
+/* Main menu settings */
+#top_nav {
+	width:650px;
+	margin:auto;
+	position:relative;
+	z-index:1000; /* This makes the dropdown menus appear above the page content below */
+}
+
+/* Top menu items */
+#top_nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:relative;
+}
+#top_nav ul li {
+	float:left;
+	position:relative;
+}
+
+#top_nav ul li a {
+	display:block;
+	margin:0;
+	padding:.75em 1em .75em 1em;
+	font-size:1.1em;
+	text-decoration:none;
+	font-weight:bold;
+	color:#434343;
+	border:none;
+	text-align:left;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#top_nav ul li a:hover {
+	background:#f9fbb9; /* Top menu items background color */
+}
+
+#top_nav ul li:hover a,
+#top_nav ul li.hover a { /* This line is required for IE 6 and below */
+	background:#f9fbb9; /* Top menu items background color */
+}
+
+/* Submenu items */
+#top_nav ul ul {
+	display:none; /* Sub menus are hidden by default */
+	position:absolute;
+	top:3em;
+	left:0;
+	float:left;
+	border:1.5px solid #999;
+	z-index:1000; /* This makes the dropdown menus appear above the page content below */
+}
+
+#top_nav ul ul li {
+	margin:0; /* Reset the 1px margin from the top menu */
+	float:left;
+}
+
+#top_nav ul ul li a,
+#top_nav ul li.active li a,
+#top_nav ul li:hover ul li a,
+#top_nav ul li.hover ul li a { /* This line is required for IE 6 and below */
+	font-size:1em;
+	font-weight:normal; /* resets the bold set for the top level menu items */
+	background-color:#f6f6f6;
+	line-height:1.4em; /* overwrite line-height value from top menu */
+	border-bottom:1px dotted #999; /* sub menu item horizontal lines */
+	float:left;
+	text-align:left;
+	width:165px;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+#top_nav ul ul li a:hover,
+#top_nav ul li.active ul li a:hover,
+#top_nav ul li:hover ul li a:hover,
+#top_nav ul li.hover ul li a:hover { /* This line is required for IE 6 and below */
+	background:#f9fbb9; /* Sub menu items background color */
+	color:#000;
+	float:left;
+}
+
+/*flip the submenu of the last list to stay inside the page*/
+#top_nav ul ul.last {
+	left:auto;
+	right:0;
+}
+
+#top_nav ul ul.last li {
+	float:right;
+}
+
+/* Make the sub menus appear on hover */
+#top_nav ul li:hover ul,
+#top_nav ul li.hover ul { /* This line is required for IE 6 and below */
+	display:block; /* Show the sub menus */
+}
+		
+/* Body ---------------------------------------------------------------------------------------------------------------------- */
+body {
+	background-color:#e7e7e7;
+	height:100%;
+	font-size: .75em; /*12px / 16px */
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color:#000000;
+}
+
+/* Layout -------------------------------------------------------------------------------------------------------------------- */
+#page {
+	background-color:#fff;
+}
+
+#main {
+	width:100%;
+	max-width:1000px;
+	margin:auto;
+	background: #fff url(../images/main_background.gif) repeat-y 24% 0;
+}
+
+#content {
+	width:74%;
+	padding-top:2%;
+	padding-bottom:3em;
+	float:right;
+	min-width:250px;
+}
+
+#content_text {
+	padding-left:4.107425%; /*26px/633px*/
+	padding-right:4.107425%; /*26px/633px*/
+	padding-top:1.75em; /*21px/12px*/
+	padding-bottom:1em;
+}
+
+#register_btn {
+	width:90%;
+	margin:auto;
+	margin-bottom:1em;
+	background-color:#fff;
+	text-align:center;
+	font-size:1.55em;
+	display:block;
+	padding:1em .25em 1em .25em;
+	font-weight:bold;
+	border:2px dotted #f8b800;
+	margin-top:1em;
+	/*-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;*/
+	
+}
+
+#register_btn a, #register_btn a:visited {
+	font:Georgia, "Times New Roman", Times, serif;
+	color:#000;
+	text-decoration:none;
+}
+
+#register_btn a:hover {
+	color:#fff;
+	border-bottom:1px dotted #fff;
+	text-decoration:none;
+}
+
+#left_nav {
+	/*margin-left:3%;*/
+	width:24%;
+	min-width:175px;
+	float:left;
+	/*margin-top:3.0854167%; /*same as #content*/
+	padding:1% 1% 0 1%;
+	/*border-right:1px solid #f8b800;
+	border-left:1px solid #f8b800;
+	border-bottom:1px solid #f8b800;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;*/
+}
+
+#add_this_tools {
+	width:150px;
+	margin-bottom:.75em;
+	margin-top:1em;
+	padding-bottom:.25em;
+}
+
+#left_nav #add_this_tools a:hover, #left_nav #add_this_tools a:focus, #left_nav #add_this_tools a:active {
+	border-bottom:none;
+}
+
+#left_nav ul {
+	list-style:none;
+	margin:0 0 1em 0;
+}
+
+#left_nav ul li {
+	color:#000;
+	padding-left:.5em;
+	padding-bottom:.25em;
+	margin-right:.1em;
+	font-size:1.55em;
+	/*border-bottom:1px solid #f8b800;*/
+}
+
+#left_nav a:link, #left_nav a:visited {
+	color:#000;
+	text-decoration:none;
+}
+
+#left_nav a:hover, #left_nav a:focus, #left_nav a:active {
+	color:#434343;
+	border-bottom:1px dotted #434343;
+}
+
+a.stbar.chicklet img {
+	border:0;
+	height:16px;
+	width:16px;
+	margin-right:3px;
+	vertical-align:middle;
+	}
+	
+a.stbar.chicklet {
+	height:16px;
+	line-height:16px;
+	}
+	
+#matr_survey_btn, #mult_fam_day {
+	margin-bottom:.5em;
+	}
+
+#head_image {
+	float:right;
+	margin-top:0;
+	margin-right:0;
+	width:40%;
+}
+
+/* Footer navigation and signature links ------------------------------------------------------------------------------- */
+#footer_nav {
+	width:100%;
+	clear:both;
+	display:inline-block;
+	background:#fff;
+	padding-bottom:1em;
+}
+
+#footer_nav ul {
+	list-style:none; 
+	padding-top:1em;
+}
+
+.footer_nav_section {
+	float:left;
+	width:20%;
+}
+
+.footer_nav_heading {
+	font-weight:bold;
+	font-family:Tahoma, Geneva, sans-serif;
+	background-color:#f9fbb9;
+	padding:.25em .25em .25em 1em;
+	margin-left:-1em;
+}
+
+.footer_nav_section a, .footer_nav_section li {
+	font-size:11px; /*11px/12px*/
+}
+
+.footer_nav_section li a:link, .footer_nav_section li a:visited, #right_nav a:link, #right_nav a:visited {
+	color:#434343;
+	text-decoration:none;
+}
+
+.footer_nav_section li a:hover, .footer_nav_section li a:focus, .footer_nav_section li a:active, #right_nav a:hover, #right_nav a:focus, #right_nav a:active {
+	color:#000000;
+	border-bottom:1px dotted #434343;
+}
+
+#signature {
+	clear: both;
+	width: 100%;
+	margin:auto;
+	padding:0;
+	font-size:1em;
+	line-height: 1.6em;
+	background-color:#fff;
+	margin-top:-1em;
+	}
+	
+#signature ul {
+	list-style:none; 
+	margin:auto; 
+	padding:1em 0 1em 0; 
+	text-align:center; 
+}
+
+#signature ul li {
+	color:#333;
+}
+
+#vcu_footer {
+	display:none;
+	background-color:#000;
+	width:100%;
+	padding-top:.25em;
+	padding-bottom:.25em;
+}
+
+#vcu_footer img {
+	display:block;
+	margin:auto;
+}
+
+/*Headings--------------------------------------------------------------------------------------------------------------------*/
+h1{ /*same as style1*/
+	color:#000000;
+	font-size:1.75em; /*20px/12px*/
+	padding:0em;
+	margin:0em;
+	font-weight:normal;
+	margin-top:.25em;
+	margin-bottom:.25em; /*6px/12px*/
+	text-transform:uppercase;
+}
+
+h2 {
+	font-size:1.33333333em; /*16px/12px*/
+	margin-top:1.5em; /*30px/12px*/
+	margin-bottom:1.16666667em; /*14px/12px*/
+	background-color:#f9fbb9;
+	margin-left:-2em;
+	padding:.25em .5em .25em 2em;
+}
+	
+h3 {
+	font-size:1em; /*12px/12px*/
+	font-weight:bold;
+	padding-bottom: 0.25em;
+}
+
+/* Links --------------------------------------------------------------------------------------------------------------------- */
+a:link,a:visited {
+	padding-bottom:.1em;
+	color:#132e93;
+	border-bottom:0;
+	}
+	
+a:hover {
+	padding-bottom:0em;
+	color:#3f2d0c;
+	}
+	
+a:active,a:focus {
+	padding-bottom:.1em;
+	color:#1d68a0;
+	text-decoration:none;
+	border-bottom:1px solid #dbd8c2;
+	}
+	
+a.imglink {
+	border:0;
+	background:none;
+	text-decoration:none;
+	}
+	
+/* Type ---------------------------------------------------------------------------------------------------------------------- */
+p, li {
+	table-layout:fixed;
+	margin-top:0;
+	margin-bottom:1em;
+	line-height:1.5em;
+	font-size: 1em;
+	}
+
+.no_margin {
+	margin-bottom: 0px;
+}
+
+.list_no_bullets {
+	list-style-type:none;
+}
+
+.bottom_margin, dd {
+	margin-bottom:1em;
+}
+
+.top_margin {
+	margin-top:3em;
+	margin-bottom:0;
+}
+
+.indent {
+	margin-left:1em;
+}
+
+.form {
+	margin-left:1em;
+	min-width:200px;
+}
+
+.form p {
+	margin-bottom:.35em;
+}
+
+.form label, .form input {
+	display:block;
+}
+
+#form_btns input {
+	display:inline;
+}
+
+.form_inline input, .form_inline label {
+	display:inline-block;
+}
+	
+	
+/* Lists */
+ul{margin:0 0 1.5em 1.5em; padding-top:0;}
+ol{margin:2.0em 0 2.0em 2.0em;}
+li{margin:0em 0 0em 0em;}
+	
+/* Styles */
+.style1 {
+	color: #000000; 
+	font-size: 1.66666667em; /*20px/12px*/
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin:0.0em;
+}
+
+.style2 { /*white text; i.e. footer*/
+	color: #ffffff; 
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin:0.0em;
+}
+
+.note_to_client {color:#ff0000;} /*red text*/
+
+/* Tables ------------------------------------------------------------------------------------------------------------ */
+table {
+	border-collapse: collapse;
+	margin: 0 0 1.66666667em 0; /*20px/12px*/
+	}
+		
+th {
+	font-size: 1em; 
+	color: #000; 
+	text-align: left;
+	padding: .5em;
+	background: #FFF;
+	vertical-align:text-top;
+	}
+	
+.no_emphasis { /*use when th is to look exactly like td*/
+	font-size: 1em; 
+	text-align: left;
+	font-weight:normal;
+	}
+	
+td {
+	padding: .5em; 
+	font-size: 1em; 
+	line-height: 1.4em; 
+	vertical-align: text-top;
+	}
+	
+table td.col-1 {
+	width:50%;
+	}
+table td.col-2 {
+	width:50%;
+	}
+	/* alternate bg color on table rows */
+tr {
+	background: #fff; 
+	}
+	
+tr.alt, tr.cal_head {
+	background: #FFF; 
+	color: #333;
+	}
+	
+/*Search Results*/
+#cse-search-results {
+	width:100%;
+}
+	
+/*Box around text-------------------------------------------------------------------------------------------------------*/
+.box_text {
+	border:1px solid #000000;
+	padding:1em;
+	margin-right:2em;
+	margin-bottom:1em;
+	}
+
+#skip_link {
+	float:right;
+	font-size:0.75em;
+	z-index:1000;
+}
+
+#skip_link a {
+	color:#fff;
+}
+
+#skip_link a:hover, #skip_link a:focus	{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+@media screen and (min-width:888px) {
+	#identity_search {
+		width:900px;
+	}
+}

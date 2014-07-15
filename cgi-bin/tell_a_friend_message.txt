@@ -1,0 +1,11 @@
+Hi %%to_name%%,
+
+%%from_name%% thought that <yoursitedomainhere> would be useful to you.  
+
+Put some text describing your site here.  Put some text describing your site here.  Put some text describing your site here.  Put some text describing your site here.  Put some text describing your site here.  Put some text describing your site here.  Put some text describing your site here.  
+
+Make sure to leave everything that starts and ends with two percentage signs alone, as they will be replaced with values from the submitted form.
+%%comments_to_send%%
+Take a look:
+  
+http://www.mywebsiteaddress.com
