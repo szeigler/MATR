@@ -79,12 +79,23 @@ img {
 
 /* Search -------------------------------------------------------------------------------------------------------------------- */
 #search {
-	height:24px;
 	z-index:15;
-	width:200px;
+	width:40%;
 	float:right;
 	padding-top:3em;
 	margin-right:10%;
+}
+
+#search input[type=text] {
+	border: 2px solid #ccc;
+	padding: .4em;
+	width:70%;
+	vertical-align:middle;
+}
+
+#search input[type=image] {
+	width:2.3em;
+	vertical-align:middle;
 }
 
 #search label {

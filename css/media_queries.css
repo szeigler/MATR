@@ -209,6 +209,23 @@
 
 @media screen and (max-width:403px) {
 	
+	#logo_bar {
+		margin-bottom:0;
+	}
+	
+	#matr_logo {
+		width:80%;
+		margin:auto;
+		float:none;
+	}
+	
+	#search {
+		width:90%;
+		float:none;
+		margin:auto;
+		margin-bottom:1em;
+	}
+	
 	#left_nav ul li {
 		display:block;
 	}
