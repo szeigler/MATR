@@ -247,7 +247,7 @@ return passed
 
 <p><a href="Juvenile Story Permission.pdf" target="_blank">Story Permission Form - Juvenile (under 18)</a></p>
 
-<form method="post" action="http://www.vcu.edu/cgi-bin/mailto" onSubmit="return verify(this.emailone, this.emailtwo, this.story, this.permission)">
+<form method="post" action="http://www.vcu.edu/cgi-bin/mailto" onSubmit="return verify(this.emailone, this.emailtwo, this.story, this.terms)">
 
 	<span style="display:none">
     
@@ -313,7 +313,11 @@ return passed
 
                <!--hid per Emily Hill of message of 6.17.2011 <input type="checkbox" name="permission" id="permission" /></label> --> 
 
+            <p><input type="checkbox" required name="terms" style="display:inline"/>I have read and agree to the terms and conditions, including granting VCU MATR permission to use of my photo, name and/or story.</p>
+            
             <p><strong>*By clicking the submit button, I  authorize the Mid-Atlantic Twin Registry (MATR) to use the story(ies) I  submitted to the MATR. I understand that any story I submit may be used on the MATR web site, in the MATR’s newsletter, or in other publications. I understand  that my name may be used along with my story and that my story may be edited from  its original format.</strong></p>
+            
+            
 
 			<p><em>Please click the submit button and enter the prompted Authorization code to complete your submission.</em></p>
 
@@ -321,7 +325,7 @@ return passed
             
             	<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                    <input type="submit" name="Submit" value="Submit" />
+                    <input type="submit" name="Submit" value="Submit" onclick="if(!this.form.terms.checked){alert('You must agree to the terms and conditions in order to submit this form.');return false}" />
 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -437,7 +441,7 @@ return passed
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.matr.vcu.edu/" target="_blank">The Mid-Atlantic Twin Registry</a></li>
             <li>PO Box 980617 Richmond, VA 23298</li>
             <li>1-800-URA-TWIN | 1-800-872-8946</li>
-            <li>Contact Department <a href="mailto:erahelp@vcu.edu?subject=MATR%20Website%20Comments">Webmaster</a> | Date Last Modified: <!-- #BeginDate format:Am1 -->October 2, 2014<!-- #EndDate --></li>
+            <li>Contact Department <a href="mailto:erahelp@vcu.edu?subject=MATR%20Website%20Comments">Webmaster</a> | Date Last Modified: <!-- #BeginDate format:Am1 -->March 19, 2015<!-- #EndDate --></li>
      	</ul>
 </div><!--end #signature-->
 
