@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/matr_no flex.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/matr.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8" />
 <meta name="google-site-verification" content="A7X8OErxdLQiwlQrJ9sEc010aJvGPFTP3NByJ2ea6kw" />
@@ -8,7 +8,10 @@
 <meta name="description" content="The Mid-Atlantic Twin Registry (MATR) is an organization of twins and their families who are willing to consider taking part in twin-based, health-related research." />
 <meta name="keywords" content="mid atlantic twin registry, mid-atlantic twin registry, MATR, twin registry, VCU twin registry, VCU twin, VCU twin study, twin research, twin study, twin info, twin rivalry, twin survey, twin books, twin newsletter, twins registry, twins research, twins study, registry list, twin mothers, multiples day, twin events, identical twins, fraternal twins, mirror image twins, twins Virginia, twins north Carolina, twins south Carolina, twin matter, twin blessings, twin study samples, twin tales, twin support groups, studies about stress and coping, raising twins, kids corner for twins, health questionnaire, health research, twin websites, twin foundation Richmond va, twin Richmond, twin America, mid-atlantic twin study, birth of twins, raising twins, help for families with twins, twins registry US, twin registries US, parenting twins, midatlantic twin study, midatlantic twin registry, twins register, resource of twins, twin resource, Virginia twin registry, Virginia twin register, twin register, mid atlantic twin register, twins, research application VCU MATR, matr twins vcu, vcu matr, matr twins, matr twin, matr multiples, multiples study, triplets, quadruplets, quintuplets, north Carolina twin register, south Carolina twin register, about twins, about multiples, twin privacy, biorepository, DNA, blood, repository, twin samples, east coast twins, twins on east coast, Maryland twins, higher order multiples, researching twins, researching HOM, HOM, HOM research, twin adolescent, twin behavior study, monozygotic, dizygotic, zygosity, MZ twin, DZ twins, DZ twin, DZ twins, Matr, north Carolina twin registry, south Carolina twin registry, matr.vcu.edu, matr.edu, matr@vcu.edu, vcu twins, vcu twin, Virginia twin, mcv twin study, mcv twin, vcu study, CCTR twin, twin books, twin website, teen twin rivalry, twin separation in school, twin zygosity, identical twins, fraternal twins, half-identical twins, twin repository, twin DNA, DNA study, genetics, triplets study, quadruplets study, twin registry list, twin stories, twin photos, our twins matr, your twins matr, twin blessings, twin matters, identical twins needed, fraternal twins needed, twin survey, twin questionnaire, twin rivalry, twin registery, parents of multiples Richmond, raising twins, righting twins, studies about stress and coping, children of twins study, freebies for twins, kids corner, parenting twins, pros and cons twins, " />
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--iPhone image scaling fix-->
+
 <link href="../css/matr_layout.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="../css/media_queries.css" rel="stylesheet" type="text/css" media="all"/>
 
 <link REL="SHORTCUT ICON" HREF="http://www.research.vcu.edu/favicon.ico"> <!--icon in the address bar...do NOT delete-->
 
@@ -36,14 +39,6 @@
 	<script type="text/javascript" src="http://www.matr.vcu.edu/js/iehoverfix.js"></script>
 <![endif]-->
 
-<style>
-
-	#page {
-		min-width:960px;
-	}
-
-</style>
-
 <!-- InstanceBeginEditable name="head" -->
 
 <!-- InstanceEndEditable -->
@@ -67,11 +62,12 @@
 	<div id="header">
     	<div id="logo_bar">
         	<a href="http://www.vcu.edu"><img src="../images/branding_bar.png" alt="VCU bar logo" id="vcu_logo_desktop" /></a>
+            <a href="http://www.vcu.edu"><img src="http://identity.vcu.edu/widgets/branding/black/responsive/images/vcuseal.gif" alt="VCU logo" id="vcu_logo_mobile" /></a>
        	</div>
         <span id="skip_link"><a href="#mainContent">skip to main content</a></span>
         <div id="identity_search">
         	<div id="matr_logo">
-        		<a href="http://www.matr.vcu.edu"><img src="../images/matr_logo.jpg" alt="MATR Logo" /></a>
+        		<a href="http://www.matr.vcu.edu"><img src="../images/matr_logo_gray.gif" alt="MATR Logo" /></a>
         	</div><!--end matr_logo-->
 			<div id="search">
   				<form action="http://search.vcu.edu/search" method="get">
@@ -87,35 +83,27 @@
                	<input type="hidden" name="ud" value="1">
                 <input type="hidden" name="site" value="mtr">
   				<label for="searchField">Search for:</label>
-                <input name="sa" type="image" class="balign" value="Search" src="http://www.research.vcu.edu/graphics/header/go.gif" alt="Search MATR" />
+                <button class="search_btn" type="submit"></button>
                 </form>
            	</div>
+            
+            <div id="register_btn"><a href="../info-twins/register.html">REGISTER HERE</a></div>
+            
   		</div><!--end identity_search-->
   
 <div id="top_nav_container">
 <div id="top_nav">
 	<ul>
-		<li><a href="../about.html">About</a></li>
-        
-		<li><a href="../research/index.html">Research</a>
+		<li><a href="../info-twins/index.html">Twins &amp; Families</a>
 			<ul>
-
-				<li><a href="../research/why-study-twins.html">Why Study Twins?</a></li>
-				<li><a href="../research/current-studies.html">Current Studies</a></li>
-				<li><a href="../research/participate-now.html">Participate Now</a></li>
-                <li><a href="../research/past-studies.html">Past Studies</a></li>
-                <li><a href="../research/study-results.html">Study Results</a></li>
-			</ul>
-
-		</li>
-		<li><a href="../info-twins/index.html">For Twins</a>
-			<ul>
-				<li><a href="../info-twins/why-join.html">Why Join MATR?</a></li>
-				<li><a href="../info-twins/register.html">Register with MATR</a></li>
-                <li><a href="../info-twins/participants-rights.html">Rights as Participants</a></li>
-                <li><a href="../info-twins/update.html">Update Contact Info</a></li>
-                <li><a href="../info-twins/confidentiality.html">Certificate of Confidentiality</a></li>
-                <li><a href="events-twins.html">Events for Twins</a></li>
+				<li><a href="../info-twins/why-study-twins.html">Why Study Twins?</a></li>
+                <li><a href="../info-twins/why-join.html">Why Join MATR?</a></li>
+                <li><a href="../info-twins/register.html">Register with MATR</a></li>
+                <li><a href="../info-twins/participate-now.html">Participate Now</a></li>
+				<li><a href="../info-twins/current-studies.html">Current Studies</a></li>
+                <li><a href="../info-twins/past-studies.html">Past Studies</a></li>
+                <li><a href="../info-twins/study-results.html">Study Results</a></li>
+                <li><a href="../info-twins/confidentiality.html">Certificate of Confidentiality</a></li>         
 			</ul>
 		</li>
         <li><a href="../info-researchers/index.html">For Researchers</a>
@@ -133,7 +121,8 @@
 		</li>
         <li><a href="index.html">Resources</a>
 			<ul>
-				<li><a href="twins-news.html">Twins in the News</a></li>
+				<li><a href="events-twins.html">Events for Twins</a></li>
+                <li><a href="twins-news.html">Twins in the News</a></li>
 				<li><a href="newsletter.html">MATR Newsletter</a></li>
 				<li><a href="books-twins.html">Books About Twins</a></li>
 				<li><a href="websites-twins.html">Website Links</a></li>
@@ -143,11 +132,11 @@
 			</ul>
 		</li>
         <li><a href="../photos-stories.html">Photos &amp; Stories</a>
-			<ul class="last">
-				<li><a href="../submit-photos.html">Submit Photos</a></li>
-				<li><a href="../twin-photos.html">MATR Photo Album</a></li>
-				<li><a href="../submit-stories.html">Submit Stories</a></li>
-				<li><a href="../twin-stories.html">MATR Story Page</a></li>
+			<ul>
+				<li><a href="../submit-photos.html">Submit your photo!</a></li>
+                <li><a href="../twin-photos.html">MATR Twin Photos</a></li>
+				<li><a href="../submit-stories.html">Submit your story!</a></li>
+				<li><a href="../twin-stories.html">MATR Twin Stories</a></li>
 			</ul>
 		</li>
 	</ul>
@@ -156,280 +145,112 @@
 </div><!--end header-->
 <div id="main">        
 	<div id="content">             
-		    <!-- InstanceBeginEditable name="head image" -->            	
-                <img src="../images/photos/college-scholarships.jpg" alt="Twin boys with books stacked on their heads" id="head_image" />
-                <!-- InstanceEndEditable -->                   
+		                       
       <div id="content_text">
       <a id="mainContent"></a>
 <!-- InstanceBeginEditable name="content" --> 
 
-<h1>TWIN RESOURCES</h1>
-
-<h2>College Scholarships</h2>
-
-<p>Are you or your twin(s) ready to make the big decision of where to attend college? Well, the MATR has compiled a few schools that might offer you a discount for being a twin or multiple!</p>
-
-<p>Keep in mind, this information is provided as a courtesy to our participants - it is not a complete list of schools offering discounts to multiples nor does that MATR recommend any of the schools over another. When considering schools, contact the accounting office and ask about discounts. Even if a college or university does not have a specific scholarship fund or award designated for multiples, they may have a sibling discount program. These programs offer a discount when siblings from the same family are enrolled simultaneously. Amounts vary and the discount may be a set dollar amount or percentage of tuition.</p>
-
-<p><em>College Discount for Multiples</em></p>
-
-<table border="0">
-
-  <tr>
-
-    <th>College/University</th>
-
-    <th>Location</th>
-
-    <th>Discount</th>
-
-    <th>Website</th>
-
-  </tr>
-
-  <tr>
-
-    <td>Ashland University</td>
-
-    <td>Ashland, OH</td>
-
-    <td>Offered when two siblings from the same family are full-time undergraduate students. Grant is worth 50% of tuition and will be split equally between the students.</td>
-
-    <td><a href="http://www.ashland.edu/" target="_blank">http://www.ashland.edu/</a></td>
-
-  </tr>
-  
-  <tr>
-
-    <td>Carl Albert State College</td>
-
-    <td>Porteau, OK</td>
-
-    <td>Paula Nieto Twin Scholarship - Established by family and friends in memory of Paula Nieto, a twin. Sophomore twins.</td>
-
-    <td><a href="https://carlalbert.edu/financial-aid/scholarships/" target="_blank">https://carlalbert.edu/financial-aid/scholarships/</a></td>
-
-  </tr>
-
-  <tr>
-
-    <td>George Washington University</td>
-
-    <td>Washington, DC</td>
-
-    <td>One sibling pays full tuition; the second gets a 50% discount.</td>
-
-    <td><a href="http://www.gwu.edu/" target="_blank">http://www.gwu.edu/</a></td>
-
-  </tr>
-
-  <tr>
-
-    <td>Lake Eerie College</td>
-
-    <td>Painesville, OH</td>
-
-    <td>Full tuition is paid by one twin only and the twin who pays alternates each year.</td>
-
-    <td><a href="http://www.lec.edu/" target="_blank">http://www.lec.edu/</a></td>
-
-  </tr>
-
-  <tr>
-
-    <td>Morris Brown College</td>
-
-    <td>Atlanta, GA</td>
-
-    <td>Provides relief for parents with twins enrolled full-time by waiving full tuition for one of the twins.</td>
-
-    <td><a href="http://www.morrisbrown.edu/" target="_blank">http://www.morrisbrown.edu/</a></td>
-
-  </tr>
-
-  <tr>
-
-    <td>Quinnipiac University</td>
-
-    <td>Hamden, CT</td>
-
-    <td>Multiple Sibling Award: Full-time, undergraduate siblings concurrently in attendance, are eligible to recieve an additional $2,000 award, per year.</td>
-
-    <td><a href="http://www.quinnipiac.edu/" target="_blank">http://www.quinnipiac.edu/</a></td>
-
-  </tr>
-
-  <tr>
-
-    <td>Randolph-Macon Women's College (Randolph College)</td>
-
-    <td>Lynchburg, VA</td>
-
-    <td>Twin sisters who enroll as full-time degree candidates eligible to recieve a grant equal to 15% of the annual tuition - 7 per year.</td>
-
-    <td><a href="http://www.randolphcollege.edu/" target="_blank">http://www.randolphcollege.edu/</a></td>
-
-  </tr>
-
-  <tr>
-
-    <td>Randolph-Macon College</td>
-
-    <td>Ashland, VA</td>
-
-    <td>New recipients may recieve up to $8,000 per year as long as two or more siblings are enrolled full-time.</td>
-
-    <td><a href="http://www.rmc.edu/" target="_blank">http://www.rmc.edu/</a></td>
-
-  </tr>
-
-  <tr>
-
-    <td>Sterling College</td>
-
-    <td>Sterling, KS</td>
-
-    <td>Each twin (or multiple birth) student recieves a 50% tuition scholarship. Both twins (or multiple birth) must be enrolled full time and meet requirements of 2.2 GPA and a score of 18 or above on the ACT.</td>
-
-    <td><a href="http://www.sterling.edu/" target="_blank">http://www.sterling.edu/</a></td>
-
-  </tr>
-
-  <tr>
-
-    <td>West Chester University of PA</td>
-
-    <td>West Chester, PA</td>
-
-    <td>Bonnie Evans Feinberg Scholarship: To first year student from a middle-class, multiple-sibling family who is a solid &quot;B&quot; or better student. Renewable with maintenance of a 3.0 GPA.</td>
-
-    <td><a href="http://www.wcupa.edu/" target="_blank">http://www.wcupa.edu/</a></td>
-
-  </tr>
-
-  <tr>
-
-    <td>Wilson College</td>
-
-    <td>Chambersburg, PA</td>
-
-    <td>Annual twins/triplets/scholarship pays 45% of each multiple tuition.</td>
-
-    <td><a href="http://www.wilson.edu/" target="_blank">http://www.wilson.edu/</a></td>
-
-  </tr>
-
-</table>
+<h1>College Scholarships</h1>
+
+	<p>Are you or your twin(s) ready to make the big decision of where to attend college? Well, the MATR has compiled a few schools that might offer you a discount for being a twin or multiple!</p>
+
+	<p>Keep in mind, this information is provided as a courtesy to our participants - it is not a complete list of schools offering discounts to multiples nor does that MATR recommend any of the schools over another. When considering schools, contact the accounting office and ask about discounts. Even if a college or university does not have a specific scholarship fund or award designated for multiples, they may have a sibling discount program. These programs offer a discount when siblings from the same family are enrolled simultaneously. Amounts vary and the discount may be a set dollar amount or percentage of tuition.</p>
+
+<h2>College Discount for Multiples</h2>
+
+    <p><a href="http://www.ashland.edu/" target="_blank">Ashland University</a><br/>
+    <em>Ashland, OH</em><br/>
+    Offered when two siblings from the same family are full-time undergraduate students. Grant is worth 50% of tuition and will be split equally between the students.</p>
+
+    <p><a href="https://carlalbert.edu/financial-aid/scholarships/" target="_blank">Carl Albert State College</a><br/>
+    <em>Porteau, OK</em><br/>
+    Paula Nieto Twin Scholarship - Established by family and friends in memory of Paula Nieto, a twin. Sophomore twins.</p>
+    
+    <p><a href="http://www.gwu.edu/" target="_blank">George Washington University</a><br/>
+    <em>Washington, DC</em><br/>
+    One sibling pays full tuition; the second gets a 50% discount.</p>
+    
+    <p><a href="http://www.lec.edu/" target="_blank">Lake Eerie College</a><br/>
+    <em>Painesville, OH</em><br/>
+    Full tuition is paid by one twin only and the twin who pays alternates each year.</p>
+    
+    <p><a href="http://www.morrisbrown.edu/" target="_blank">Morris Brown College</a><br/>
+    <em>Atlanta, GA</em><br/>
+    Provides relief for parents with twins enrolled full-time by waiving full tuition for one of the twins.</p>
+    
+    <p><a href="http://www.quinnipiac.edu/" target="_blank">Quinnipiac University</a><br/>
+    <em>Hamden, CT</em><br/>
+    Multiple Sibling Award: Full-time, undergraduate siblings concurrently in attendance, are eligible to recieve an additional $2,000 award, per year.</p>
+    
+    <p><a href="http://www.randolphcollege.edu/" target="_blank">Randolph-Macon Women's College (Randolph College)</a><br/>
+    <em>Lynchburg, VA</em><br/>
+    Twin sisters who enroll as full-time degree candidates eligible to recieve a grant equal to 15% of the annual tuition - 7 per year.</p>
+    
+    <p><a href="http://www.rmc.edu/" target="_blank">Randolph-Macon College</a><br/>
+    <em>Ashland, VA</em><br/>
+    New recipients may recieve up to $8,000 per year as long as two or more siblings are enrolled full-time.</p>
+    
+    <p><a href="http://www.sterling.edu/" target="_blank">Sterling College</a><br/>
+    <em>Sterling, KS</em><br/>
+    Each twin (or multiple birth) student recieves a 50% tuition scholarship. Both twins (or multiple birth) must be enrolled full time and meet requirements of 2.2 GPA and a score of 18 or above on the ACT.</p>
+    
+    <p><a href="http://www.wcupa.edu/" target="_blank">West Chester University of PA</a><br/>
+    <em>West Chester, PA</em><br/>
+    Bonnie Evans Feinberg Scholarship: To first year student from a middle-class, multiple-sibling family who is a solid &quot;B&quot; or better student. Renewable with maintenance of a 3.0 GPA.</p>
+    
+    <p><a href="http://www.wilson.edu/" target="_blank">Wilson College</a><br/>
+    <em>Chambersburg, PA</em><br/>
+    Annual twins/triplets/scholarship pays 45% of each multiple tuition.</p>
 
 <!-- InstanceEndEditable -->
       </div><!--end content_text-->
+      
+      <div id="right_nav">
+      	<div id="right_nav_top">
+    	<!-- InstanceBeginEditable name="head image" -->            	
+                <img src="../images/photos/college-scholarships.gif" alt="Twin boys with books stacked on their heads" id="head_image" />
+                <!-- InstanceEndEditable -->
+        
+					<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+						<div id="addthis_btns"><a class="addthis_button_preferred_1"></a>
+						<a class="addthis_button_preferred_2"></a>
+                        <a class="addthis_button_preferred_3"></a>
+                        <a class="addthis_button_compact"></a></div>
+					</div>
+				<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f71cf0b233c96fa"></script>
+                </div>
+        	<ul>
+        		<li class="right_nav_btn"><a href="../about.html">About</a></li>
+                <li class="right_nav_btn"><a href="../info-twins/update.html">Update Your Info</a></li>
+                <li class="right_nav_btn"><a href="../contact.html">Contact MATR</a></li>
+            	<li class="right_nav_btn"><a href="../privacy.html">Privacy and Rights</a></li>
+                <li class="right_nav_btn"><a href="../info-twins/participate-now.html">MATR Survey</a></li>
+			</ul>
+            
+            <!-- InstanceBeginEditable name="testament" -->
+			<!-- InstanceEndEditable -->            
+       	</div><!--end right_nav-->
     </div><!--end content-->
     
-    <div id="left_nav">
-    
-    	<div id="register_btn"><a href="../info-twins/register.html">REGISTER HERE</a></div>
-        	<ul>
-            	<li id="add_this_tools"><!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-<a class="addthis_button_preferred_1"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<a class="addthis_button_compact"></a>
-</div>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f71cf0b233c96fa"></script>
-<!-- AddThis Button END --></li>
-        		<li><a href="../index.html">Home</a></li>
-                <li><a href="../info-twins/update.html">Update Your Contact Info</a></li>
-                <li><a href="../contact.html">Contact MATR</a></li>
-            	<li><a href="../privacy-policy.html">Privacy Policy</a></li>                
-                          	
-        	</ul>
-            
-            <div id="left_nav_img">
-
-            <a href="../research/participate-now.html"><img src="../images/matr-survey2.jpg" id="matr_survey_btn" alt="MATR Survey button" /></a>
-            
-            </div>
-       	</div><!--end left_nav-->
-        
-    <div id="footer_nav">
-    	<div class="footer_nav_section">
-        	<ul>
-            	<li class="footer_nav_heading">MATR &amp; Research</li>
-                <li>&#187; <a href="../research/why-study-twins.html">Why Study Twins?</a></li>
-                <li>&#187; <a href="../research/current-studies.html">Current Studies</a></li>
-                <li>&#187; <a href="../research/participate-now.html">Participate Now</a></li>
-                <li>&#187; <a href="../research/past-studies.html">Past Studies</a></li>
-                <li>&#187; <a href="../research/study-results.html">Study Results</a></li>
-           	</ul>
-        </div><!--end footer_nav_section-->
-        
-        <div class="footer_nav_section">
-        	<ul>
-            	<li class="footer_nav_heading">MATR Info for Twins</li>
-                <li>&#187; <a href="../info-twins/why-join.html">Why join MATR?</a></li>
-                <li>&#187; <a href="../info-twins/register.html">Register with MATR</a></li>
-                <li>&#187; <a href="../register/adult.html">Adult Twin Registration</a></li>
-                <li>&#187; <a href="../register/juve.html">Juvenile Twin Registration</a></li>
-                <li>&#187; <a href="../info-twins/participants-rights.html">Rights as Participants</a></li>
-                <li>&#187; <a href="../info-twins/update.html">Update Contact Info</a></li>
-                <li>&#187; <a href="../update/adult.html">Adult Twin Update Contact Info</a></li>
-                <li>&#187; <a href="../update/juve.html">Juvenile Twin Update Contact Info</a></li>
-           	</ul>
-        </div><!--end footer_nav_section-->
-        
-        <div class="footer_nav_section">
-        	<ul>
-            	<li class="footer_nav_heading">Info for Researchers</li>
-                <li>&#187; <a href="../info-researchers/general-information.html">General Information</a></li>
-                <li>&#187; <a href="../info-researchers/repository.html">MATR Repository</a></li>
-                <li>&#187; <a href="../info-researchers/publications-citing.html">Publications &amp; Citing</a></li>
-                <li>&#187; <a href="../info-researchers/research-services.html">Research Services</a></li>
-                <li>&#187; <a href="../info-researchers/statistics.html">MATR Statistics</a></li>
-                <li>&#187; <a href="../info-researchers/research-guidelines.html">Research Guidelines</a></li>
-                <li>&#187; <a href="../info-researchers/research-application.html">Research Application</a></li>
-                <li>&#187; <a href="../info-researchers/collaborations.html">Collaborations</a></li>
-                <li>&#187; <a href="../info-researchers/brochure.html">Brochure to Share</a></li>
-           	</ul>
-        </div><!--end footer_nav_section-->
-
-        <div class="footer_nav_section">
-        	<ul>
-            	<li class="footer_nav_heading">Twin Resources</li>
-                <li>&#187; <a href="events-twins.html">Events for Twins</a></li>
-                <li>&#187; <a href="newsletter.html">MATR Newsletter</a></li>
-                <li>&#187; <a href="books-twins.html">Books About Twins</a></li>
-                <li>&#187; <a href="websites-twins.html">Website Links</a></li>
-                <li>&#187; <a href="zygosity-info.html">Zygosity Information</a></li>
-                <li>&#187; <a href="zygosity-facts.html">Zygosity Facts</a></li>
-                <li>&#187; <a href="zygosity-testing.html">Zygosity Testing</a></li>
-                <li>&#187; <a href="separation-school.html">Separation in School</a></li>
-                <li>&#187; <a href="scholarships.html">College Scholarships</a></li>
-           	</ul>
-        </div><!--end footer_nav_section-->
-        
-        <div class="footer_nav_section">
-        	<ul>
-            	<li class="footer_nav_heading">Photos &amp; Stories</li>
-                <li>&#187; <a href="../submit-photos.html">Submit Photos</a></li>
-                <li>&#187; <a href="../twin-photos.html">MATR Photo Album</a></li>
-                <li>&#187; <a href="../submit-stories.html">Submit Stories</a></li>
-                <li>&#187; <a href="../twin-stories.html">MATR Story Page</a></li>
-           	</ul>
-        </div><!--end footer_nav_section-->
-    </div><!--end footer_nav-->
-    
-   <div id="signature">
+    <div id="signature">
   		<ul>
     		<li><a href="http://www.vcu.edu" target="_blank">Virginia Commonwealth University</a> | <a href="http://www.matr.vcu.edu/" target="_blank">The Mid-Atlantic Twin Registry</a></li>
             <li>PO Box 980617 Richmond, VA 23298</li>
             <li>1-800-URA-TWIN | 1-800-872-8946</li>
-            <li>Contact Department <a href="mailto:erahelp@vcu.edu?subject=MATR%20Website%20Comments">Webmaster</a> | Date Last Modified: <!-- #BeginDate format:Am1 -->October 2, 2014<!-- #EndDate --></li>
+            <li><a href="mailto:erahelp@vcu.edu?subject=MATR%20Website%20Comments">Contact Webmaster</a> | Date Last Modified: <!-- #BeginDate format:Am1 -->May 13, 2015<!-- #EndDate --> | <a href="http://ts.vcu.edu/cgi-bin/posh.pl">View text version</a></li>
      	</ul>
 </div><!--end #signature-->
 
 </div><!--end main-->
+
+<div id="vcu_footer">
+
+	<a href="http://www.makeitreal.vcu.edu" target="_blank"><img src="http://identity.vcu.edu/widgets/branding/black/responsive/images/makeitrealFooter.gif" alt="Make It Real" /></a>
+    
+    <a href="http://www.vcu.edu" target="_blank"><img src="http://identity.vcu.edu/widgets/branding/black/responsive/images/vcubar-footer.gif" alt="Virginia Commonwealth University" /></a>
+    
+</div>
 	
 </div><!--end .page-->
-</body>    
+</body>
 <!-- InstanceEnd --></html>

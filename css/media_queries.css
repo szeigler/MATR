@@ -1,8 +1,41 @@
 
 /*---------------Media Queries-----------------*/
+@media screen and (max-width:1044px) {
+	#identity_search {
+		width:85%;
+	}
+	
+	#search, #register_btn {
+		float:left;
+		margin-left:2%;
+	}
+	
+	.right_nav_btn {
+		margin:.5em;
+	}
+	
+	#head_image {
+		margin:-.5em 0 0 0;
+	}
+}
+
+@media screen and (max-width:865px) {
+	#search {
+		padding-top:1.5em;
+	}
+	
+	#search input[type=text] {
+		width:78%;
+	}
+}
+
+@media screen and (max-width:824px) {
+	#matr_logo {
+		padding-top:1em;
+	}
+}
 
 @media screen and (max-width:767px) {
-	
 	#vcu_logo_desktop {
 		display:none;
 	}
@@ -15,117 +48,146 @@
 	#vcu_footer {
 		display:block;
 	}
+	
+	#content_text {
+		width:92.5%;
+		display:block;
+		float:none;
+		margin:auto;
+		padding-left:2%;
+		padding-right:2%;
+	}
+	
+	h1 {
+		width:105%;
+		margin-bottom:1em;
+		margin-top:1em;
+	}
+	
+	#right_nav {
+		width:90%;
+		float:none;
+		margin:auto;
+		border-top:1px solid #e7e7e7;
+		border-left:0;
+	}
+	
+	#right_nav_top {
+		float:left;
+		width:50%;
+	}
+	
+	#head_image {
+		width:100%;
+		float:left;
+		margin-top:-1em;
+	}
+	
+	#right_nav ul {
+		width:50%;
+		float:right;
+	}
 }
 
 @media screen and (max-width:730px) {
 	
-	#top_nav {
-		width:539px;
-	}
-	
-	#top_nav ul li a {
-		font-size:.9em;
-		font-weight:normal;
-	}
-	
-	#top_nav ul ul {
-		top:2.7em;
-	}
-	
-	#search {
-		width:40%;
-		padding-top:2em;
-	}
-}
-
-@media screen and (max-width:765px) {
-	#main {
-		background:#fff;
-	}
-	
-	#left_nav {
-		float:left;
-		margin-top:0;
-		width:90%;
-		margin-left:4%;
-		text-align:center;
-		background-color:#f9fbb0;
-	}
-	
-	#left_nav ul li:first-child {
-		margin:auto
-	}
-	
-	#left_nav ul li:not(:first-child) {
-		padding:2%;
-		display:inline-block;
-		background-color:rgba(255,255,255,0.5);
-		margin:.75%;
-	}
-	
-	#left_nav_img {
-		width:60%;
-		margin:auto;
-	}
-	
-	#left_nav_img img {
-		width:100%;
-	}
-	
-	#content {
-		width:94%;
-		float:left;
-		margin-left:2%
-	}
-	
-	#heading_bar {
-		margin:auto;
-		width:100%;
-		-webkit-border-top-left-radius: 0px;
-		-webkit-border-bottom-left-radius: 0px;
-		-moz-border-radius-topleft: 0px;
-		-moz-border-radius-bottomleft: 0px;
-		border-top-left-radius: 0px;
-		border-bottom-left-radius: 0px;
-	}
-	
-	#footer_nav {
-		display:none;
-	}
-	
-	#content_text {
-		padding-top:1.5em; /*26px/12px*/
-	}
-	
-	h1 {
-		font-weight:normal;
-	}
-}
-
-@media screen and (max-width:675px) {
 	#identity_search {
 		width:100%;
 	}
-		
-	#top_nav {
-		padding-top:0;
-	}
 	
 	#matr_logo {
-		margin-left:5%;
+		padding-top:.5em;
+		padding-left:2.5em;
 	}
 	
 	#search {
-		margin-right:5%;
+		width:30%;
 	}
 	
+	#search input[type=text] {
+		width:77%;
+	}
+	
+	#register_btn {
+		width:30%;
+	}
+	
+	#top_nav ul li a {
+		font-size:1.2em;
+	}
+	
+	#top_nav ul ul {
+		top:3.9em;
+	}
+}
+
+@media screen and (max-width:680px) {
+	#matr_logo {
+		margin-top:1em;
+	}
+}
+
+@media screen and (max-width:605px) {
+	#matr_logo {
+		margin-top:0;
+		width:70%;
+		margin:auto;
+		float:none;
+	}
+	
+	#search {
+		width:70%;
+		float:none;
+		margin:auto;
+		padding-top:0;
+		padding-bottom:1em;
+	}
+	
+	#register_btn {
+		width:50%;
+		float:none;
+		margin:auto;
+		margin-bottom:1em;
+	}
+	
+	#register_btn a {
+		margin-bottom:1em;
+	}
+	
+	#top_nav ul ul {
+		top:3.7em;
+	}
+	
+	#right_nav_top {
+		float:none;
+		width:100%;
+	}
+	
+	#right_nav ul {
+		width:100%;
+		float:none;
+	}
+	
+	#content {
+		padding-bottom:.5em;
+	}
+}
+
+@media screen and (max-width:585px) {
+	
+	#top_nav ul li a {
+		font-size:1.1em;
+	}
+	
+	#top_nav ul ul li a,
+	#top_nav ul li.active li a,
+	#top_nav ul li:hover ul li a,
+	#top_nav ul li.hover ul li a { /* This line is required for IE 6 and below */
+		width:118px;
+	}
 }
 
 @media screen and (max-width:544px) {
-	
-	#top_nav_container {
-		background-color:#f9fbb9;
-	}
 	
 	#top_nav {
 		float:none;
@@ -137,21 +199,6 @@
 		display:block;
 		width:145px;
 		font-size:1.1em;
-		-webkit-border-top-left-radius:0px;
-		-webkit-border-top-right-radius:0px;
-		-moz-border-radius-topleft:0px;
-		-moz-border-radius-topright:0px;
-		border-top-left-radius:0px;
-		border-top-right-radius:0px;
-	}
-	
-	#top_nav ul li a:hover {
-		background:#fff; /* Top menu items background color */
-	}
-
-	#top_nav ul li:hover a,
-	#top_nav ul li.hover a { /* This line is required for IE 6 and below */
-		background:#fff; /* Top menu items background color */
 	}
 
 	#top_nav ul ul, #top_nav ul ul.last {
@@ -165,106 +212,22 @@
 	#top_nav ul li.active li a,
 	#top_nav ul li:hover ul li a,
 	#top_nav ul li.hover ul li a { /* This line is required for IE 6 and below */
-		width:140px;
 		border:1px dotted #999;
-	}
-	
-	#top_nav ul ul {
-		width:140px;
-	}
-	
-	#search {
-		padding-top:1em;
-	}
-	
-}
-
-@media screen and (max-width:462px) {
-	#matr_logo {
-		min-width:100px;
-	}
-	
-	#search_box {
-		width:70%;
-	}
-	
-}
-
-@media screen and (max-width:450px) {
-	#head_image {
-		float:none;
-		width:215px;
-		padding-bottom:0;
-	}
-	
-	h1	{
-	margin-top:0;
-	margin-bottom:0; /*6px/12px*/
-	}
-	
-	h2 {
-	margin-top:1em; /*30px/12px*/
-	}
+	}	
 }
 
 @media screen and (max-width:403px) {
 	
-	#logo_bar {
-		margin-bottom:0;
-	}
-	
 	#matr_logo {
 		width:80%;
-		margin:auto;
-		float:none;
 	}
 	
 	#search {
 		width:90%;
-		float:none;
-		margin:auto;
-		margin-bottom:1em;
+		margin-bottom:.5em;
 	}
 	
-	#left_nav ul li {
-		display:block;
-	}
-	
-	#left_nav_img {
-		width:90%;
-		margin:auto;
-	}
-	
-	#left_nav_img img {
-		width:100%;
-	}
-	
-	#search {
-		padding-top:0;
-	}
-	
-	#top_nav_container {
-		margin-top:0;
-	}
-}
-
-@media screen and (max-width:368px) {
-	#top_nav ul ul, #top_nav ul ul.last {
-		margin-right:0;
-	}
-	
-	#top_nav ul ul li, #top_nav ul ul.last li {
-		float:right;
-	}
-	
-	#top_nav ul ul li a,
-	#top_nav ul li.active li a,
-	#top_nav ul li:hover ul li a,
-	#top_nav ul li.hover ul li a { /* This line is required for IE 6 and below */
-		width:141px;
-	}
-	
-	#top_nav ul ul {
-		width:141px;
+	#register_btn {
+		width:80%;
 	}
 }

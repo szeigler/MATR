@@ -1,3 +1,0 @@
-template_top_location=c:/windows/desktop/expertwebinstalls/cgi-bin/templates/top.html
-template_bottom_location=c:/windows/desktop/expertwebinstalls/cgi-bin/templates/bottom.html
-sendmail_path=/usr/sbin/sendmail

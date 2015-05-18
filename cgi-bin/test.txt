@@ -1,3 +1,0 @@
-template_top_location=/usr/local/etc/httpd/vhosts/expertwebinstalls.com/cgi-bin/templates/top.html
-template_bottom_location=/usr/local/etc/httpd/vhosts/expertwebinstalls.com/cgi-bin/templates/bottom.html
-sendmail_path=/usr/sbin/sendmail
