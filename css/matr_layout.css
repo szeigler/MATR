@@ -87,7 +87,7 @@ img {
 }
 
 button.search_btn {
-	background-image:url(http://www.research.vcu.edu/graphics/header/go.gif);
+	background-image:url(../images/go.gif);
 	background-size: 25px 25px;
 	background-repeat:no-repeat;
 	border:none;
@@ -337,14 +337,13 @@ body {
 	padding-bottom:1em;
 }
 
-.addthis_toolbox {
+.social_media {
+	margin:auto;
 	width:100%;
-	display:inline-block;
+	text-align:center;
 }
 
-#addthis_btns {
-	height:32px;
-	width:144px;
+.social_media img {
 	margin:auto;
 }
 
